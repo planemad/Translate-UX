@@ -1,0 +1,143 @@
+
+.top-bar {
+top:0;
+border-bottom: solid 1px #aaa;
+background: #eee;
+height: 45px;
+line-height: 45px;
+margin: 0 0 30px;
+padding: 0;
+width: 100%;
+position: fixed;
+z-index: 100;
+box-shadow: 2px  0px  5px 1px #ccc;
+}
+
+
+.bottom-bar {
+border-top: solid 1px #aaa;
+background: #eee;
+height: 45px;
+line-height: 45px;
+margin: 30px 0 0;
+padding: 0;
+width: 100%;
+position: fixed;
+bottom:0px;
+z-index: 100;
+box-shadow: -2px  0px  5px 1px #ccc;
+
+}
+body{
+	background:#fbfbfb;
+}
+.message-list{
+margin: 60px auto;	
+padding: 60px 0;
+width:90%;
+max-width:1200px;
+min-width:900px;
+background:white;
+border: solid 1px #bbb;
+/*box-shadow: 2px  2px  5px 1px #ccc;*/
+}
+
+.message h2{
+	font-size: 32px;
+	margin:8px;
+}
+.message h3{
+	font-size: 24px;
+	margin:4px;
+}
+
+.message p{
+	font-size: 16px;
+	margin-bottom:4px;
+	margin-top:4px;
+}
+
+.row.original,.row.original h2,.row.original h3, .original,.original h2,.original h3{
+	color:#555;
+}
+.row.translated{
+	color:#111;
+}
+.close{
+	text-align: right;
+	cursor: pointer;	
+
+}
+.message-pair{
+	margin-top:1em;
+	padding-top:10px;
+	padding-bottom:10px;
+
+}
+
+.row.message-pair{
+	padding-top:1em;
+	padding-bottom:1em;	
+}
+.message-pair:hover{
+	background: #fbfbfb;
+	cursor:pointer;
+}
+
+.button.active{
+	background-color:#444;
+	color:white;
+}
+.button.active:hover{
+	background-color:#444;
+	color:white;
+}
+.button:hover{
+	color:black;
+}
+
+
+.top-bar ul > li:hover, .top-bar ul > li.active{
+	background: none;
+}
+
+.post-marker{
+	background: url("../img/uncheck.png")  right center no-repeat;
+	width:auto;
+	height:45px;
+	display:none;
+
+}
+
+.post-marker.active{
+	background: url("../img/check.png")  right center no-repeat;
+
+}
+
+.pre-marker.translate{
+	background: url("../img/translate.png")  left center no-repeat;
+	width:auto;
+	height:45px;
+
+}
+
+.pre-marker.outdated{
+	background: url("../img/outdated.png")  left center no-repeat;
+	width:auto;
+	height:45px;
+
+}
+
+
+.language-selector{
+	text-align: right;
+}
+
+
+hr{
+	margin: 80px 0;
+}
+
+a, a:hover{
+	color: #36b;
+}
