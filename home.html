@@ -13,11 +13,8 @@
         
         <title>translatewiki.net - Open source translation platform of the internet</title>
         
-        <!-- Included CSS Files (Uncompressed) -->
-        <!--
-         <link rel="stylesheet" href="stylesheets/foundation.css">
-         -->
-        
+        <!-- Source Sans webfonts -->
+        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700" rel='stylesheet' type='text/css'>
         <!-- Included CSS Files (Compressed) -->
         <link rel="stylesheet" href="libs/foundation/stylesheets/foundation.min.css">
             <link rel="stylesheet" href="libs/foundation/stylesheets/app.css">
@@ -29,13 +26,17 @@
                  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
                  <![endif]-->
                 <style>
-                    header h2{font-size:18px;}
-                    header{height:90px;border-bottom:4px solid #005999;}
-                    section{background-image:url('img/white_swan_dance_flickr.jpg';height:400px;}
+                    body{font-family: 'Source Sans Pro';}
+                    header h2{font-size:22px;margin:20px 0 10px;}
+                    header{border-bottom:4px solid #005999;}
+                    header img{height:50px;float:left;margin-right:10px;}
+                    section{background-image:url('img/white_swan_dance_flickr.jpg');height:400px;}
                     .tile{
                         background-color:#005999;
                         opacity:0.4;
-                        height:50px;
+                        height:200px;
+                        float:left;
+                        margin:5%;
                     }
                     </style>
                 
@@ -44,20 +45,19 @@
         <header>
             <div class="row">
                 <div class="twelve columns">
-                    <h2>translatewiki.net</h2>
-                    <p><strong>Open source</strong> translation platform of the internet</p>
+                    
+                    <h2><img src='img/translatewikinet-logo.svg'></img>translatewiki.net<br/>
+                    <small><strong>Open source</strong> translation platform of the internet</small>
                 </div>
             </div>
         </header>
         <section>
             <div class="row">
-                <div class="nine columns">
-                    <div class="row"><div class="three columns tile"></div><div class="six columns tile"></div></div>
-                        <div class="row"><div class="three columns tile"></div><div class="six columns tile"></div>
+                <div class="eight columns">
+                    <div class="tile" style="width:32%;">1</div><div class="tile" style="width:64%;">1</div>
+                    <div class="tile" style="width:60%;">1</div><div class="tile" style="width:30%;">1</div></div>
+                <div class="four columns"><div class="panel">Signup</div></div>
                 </div>
-                
-                <div class="three columns"><div class="panel">Signup</div></div>
-            
             </div>
         </section>
         
@@ -65,8 +65,10 @@
         <!-- Included JS Files (Compressed) -->
         <script src="libs/foundation/javascripts/jquery.js"></script>
         <script src="libs/foundation/javascripts/foundation.min.js"></script>
-        
         <!-- Initialize JS Plugins -->
         <script src="libs/foundation/javascripts/app.js"></script>
+        <!-- Internal script -->
+        <script>
+            
     </body>
 </html>
