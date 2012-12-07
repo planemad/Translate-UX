@@ -15,49 +15,167 @@
         
         <!-- Source Sans webfonts -->
         <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700" rel='stylesheet' type='text/css'>
-        <!-- Included CSS Files (Compressed) -->
-        <link rel="stylesheet" href="libs/foundation/stylesheets/foundation.min.css">
-            <link rel="stylesheet" href="libs/foundation/stylesheets/app.css">
-                
-                <script src="libs/foundation/javascripts/modernizr.foundation.js"></script>
-                
-                <!-- IE Fix for HTML5 Tags -->
-                <!--[if lt IE 9]>
-                 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-                 <![endif]-->
-                <style>
-                    body{font-family: 'Source Sans Pro';}
-                    header h2{font-size:22px;margin:20px 0 10px;}
-                    header{border-bottom:4px solid #005999;}
-                    header img{height:50px;float:left;margin-right:10px;}
-                    section{background-image:url('img/white_swan_dance_flickr.jpg');height:400px;}
-                    .tile{
-                        background-color:#005999;
-                        opacity:0.4;
-                        height:200px;
-                        float:left;
-                        margin:5%;
-                    }
-                    </style>
-                
-                </head>
+            <!-- Included CSS Files (Compressed) -->
+            <link rel="stylesheet" href="libs/foundation/stylesheets/foundation.min.css">
+                <link rel="stylesheet" href="libs/foundation/stylesheets/app.css">
+                    
+                    <script src="libs/foundation/javascripts/modernizr.foundation.js"></script>
+                    
+                    <!-- IE Fix for HTML5 Tags -->
+                    <!--[if lt IE 9]>
+                     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+                     <![endif]-->
+                    <style>
+                        body{font-family: 'Source Sans Pro';}
+                        header h2{font-size:22px;margin:20px 0 10px;}
+                        header{border-bottom:4px solid #005999;}
+                        header img{height:50px;float:left;margin-right:10px;}
+                        #user-nav{margin-top:40px;}
+                        #login-btn{float:right;background-color:#005999;margin-right:10px;}
+                        #dashboard{background-image:url('img/white_swan_dance_flickr.jpg');/* by-nc-nd http://www.flickr.com/photos/eblingandreas/6759010433/sizes/l/in/photostream/*/
+                        }
+                        .panel{margin:0;}
+                        .tiles>div{
+                            background-color:#005999;
+                            background-color:rgba(0,89,153,0.8);
+                            height:160px;
+                            float:left;
+                            margin:10px 10px 0 0;
+                            color:white;
+                            padding:10px;
+                        }
+                        .tiles>div>span{
+                            font-size:300%;
+                        }
+                        .tiles>div>p{
+                            //font-size:200%;
+                        }
+                        #search-bar{
+                            background-color:#6B7177;
+                            padding:10px;
+                        }
+                        .card{
+                            width:20%;
+                            border:1px solid #B7BABC;
+                            padding:10px 0;
+                            margin-bottom:5px;
+                            margin-left:5px;
+                        }
+                        .card img{margin-top:10px;}
+                        .card b{
+                            margin-top:20px;
+                            font-size:200%;
+                        }
+                        .progressbar {
+                            background-color: grey;
+                        }
+                        
+                        .progressbar span {
+                            background-color: #95E842;
+                            width: 40%; /* Adjust with JavaScript */
+                            height: 2px;
+                            display:block;
+                        }
+                        </style>
+                    
+                    </head>
     <body>
         <header>
             <div class="row">
-                <div class="twelve columns">
-                    
+                <div class="eight columns">
                     <h2><img src='img/translatewikinet-logo.svg'></img>translatewiki.net<br/>
-                    <small><strong>Open source</strong> translation platform of the internet</small>
+                        <small><strong>Open source</strong> translation platform of the internet</small></h2>
+                </div>
+                <div id="user-nav" class="four columns">
+                    <a id="login-btn" class="small button" href="#">Login</a>
                 </div>
             </div>
         </header>
-        <section>
+        <section id="dashboard">
             <div class="row">
-                <div class="eight columns">
-                    <div class="tile" style="width:32%;">1</div><div class="tile" style="width:64%;">1</div>
-                    <div class="tile" style="width:60%;">1</div><div class="tile" style="width:30%;">1</div></div>
-                <div class="four columns"><div class="panel">Signup</div></div>
+                <div class="seven columns">
+                    <div class="row tiles">
+                        <div style="width:25%;"><span>22</span><p>Open source projects<p></div>
+                        <div style="width:50%;"><span>5,664</span><p>Translators<p></div>
+                        <div style="width:50%;"><span>34,223</span><p>User interface strings to translate<p></div>
+                        <div style="width:25%;"><span>253</span><p>Languages<p></div>
+                    </div>
                 </div>
+                <div class="five columns">
+                    <div class="panel">
+                        <h5>Translate a free project into your language today</h5>
+                        <form>
+                            <fieldset>
+                                
+                                <legend>What languages do you know?</legend>
+                                
+                                <!--label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> Label for Checkbox</label>
+                                 <label for="checkbox2"><input type="checkbox" id="checkbox2" ><span class="custom checkbox checked"></span> Label for Checkbox</label-->
+                                <label for="checkbox3"><input type="checkbox" CHECKED id="checkbox3"> हिन्दी</label>
+                                
+                            </fieldset>
+                            <fieldset>
+                                
+                                <legend>Fill in your account details</legend>
+                                
+                                
+                                <input type="text" placeholder="Username" />
+                                <input type="text" placeholder="Password" />
+                                <input type="text" placeholder="Email" />
+                                
+                            </fieldset>
+                            <a class="success button" href="#">Create account »</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="search-bar">
+            <div class="row">
+                <h3 class="six columns"><img src='img/search-icon-white.png'></img> Find and fix a translation</h3>
+                <!--div class="six columns">
+                    <div class="row collapse">
+                        <div class="ten mobile-three columns">
+                            <input type="text" />
+                        </div>
+                        <div class="two mobile-one columns">
+                            <a class="button expand postfix">Find</a>
+                        </div>
+                    </div>                    
+                 </div>
+                </div-->
+            </div>
+        </section>
+        <section id="project-list">
+            <div class="row">
+                <h3>Choose a project to translate</h3>
+                <div class="twelve columns">
+                    <div class="three row card">
+                        <img class="five columns" src='img/wikipedia-logo.svg'></img>
+                        <div class="seven columns">
+                            <a>Wikipedia</a>
+                            <p>
+                            <b>87%</b><br />
+                            <span>12,332 strings</span>
+                            <span class="progressbar"><span></span></span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="three row card">
+                        <img class="five columns" src='img/wikipedia-logo.svg'></img>
+                        <div class="seven columns">
+                            <a>Wikipedia</a>
+                            <p>
+                            <b>87%</b><br />
+                            <span>12,332 strings</span>
+                            <span class="progressbar"><span></span></span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
             </div>
         </section>
         
@@ -65,10 +183,11 @@
         <!-- Included JS Files (Compressed) -->
         <script src="libs/foundation/javascripts/jquery.js"></script>
         <script src="libs/foundation/javascripts/foundation.min.js"></script>
+        <script src="libs/foundation/javascripts/jquery.foundation.forms.js"></script>
         <!-- Initialize JS Plugins -->
         <script src="libs/foundation/javascripts/app.js"></script>
         <!-- Internal script -->
         <script>
             
-    </body>
-</html>
+            </body>
+            </html>
