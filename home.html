@@ -13,72 +13,16 @@
         
         <title>translatewiki.net - Open source translation platform of the internet</title>
         
-        <!-- Source Sans webfonts -->
-        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700" rel='stylesheet' type='text/css'>
-            <!-- Included CSS Files (Compressed) -->
-            <link rel="stylesheet" href="libs/foundation/stylesheets/foundation.min.css">
-                <link rel="stylesheet" href="libs/foundation/stylesheets/app.css">
-                    
+        <!-- Included CSS Files (Compressed) -->
+        <link rel="stylesheet" href="libs/foundation/stylesheets/foundation.min.css">
+            <link rel="stylesheet" href="libs/foundation/stylesheets/app.css">
+                <link rel="stylesheet" href="stylesheets/styles.css">
                     <script src="libs/foundation/javascripts/modernizr.foundation.js"></script>
                     
                     <!-- IE Fix for HTML5 Tags -->
                     <!--[if lt IE 9]>
                      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
                      <![endif]-->
-                    <style>
-                        body{font-family: 'Source Sans Pro';}
-                        header h2{font-size:22px;margin:20px 0 10px;}
-                        header{border-bottom:4px solid #005999;}
-                        header img{height:50px;float:left;margin-right:10px;}
-                        #user-nav{margin-top:40px;}
-                        #login-btn{float:right;background-color:#005999;margin-right:10px;}
-                        #dashboard{background-image:url('img/white_swan_dance_flickr.jpg');/* by-nc-nd http://www.flickr.com/photos/eblingandreas/6759010433/sizes/l/in/photostream/*/
-                        }
-                        .panel{margin:0;}
-                        .tiles>div{
-                            background-color:#005999;
-                            background-color:rgba(0,89,153,0.8);
-                            height:160px;
-                            float:left;
-                            margin:10px 10px 0 0;
-                            color:white;
-                            padding:10px;
-                        }
-                        .tiles>div>span{
-                            font-size:300%;
-                        }
-                        .tiles>div>p{
-                            //font-size:200%;
-                        }
-                        #search-bar{
-                            background-color:#6B7177;
-                            padding:10px;
-                        }
-                        #search-bar h3{color:white;}
-                        .search.row{padding-top:14px;}
-                        .card{
-                            width:20%;
-                            border:1px solid #B7BABC;
-                            padding:10px 0;
-                            margin-bottom:5px;
-                            margin-left:5px;
-                        }
-                        .card img{margin-top:10px;}
-                        .card b{
-                            margin-top:20px;
-                            font-size:200%;
-                        }
-                        .progressbar {
-                            background-color: grey;
-                        }
-                        
-                        .progressbar span {
-                            background-color: #95E842;
-                            width: 40%; /* Adjust with JavaScript */
-                            height: 2px;
-                            display:block;
-                        }
-                        </style>
                     
                     </head>
     <body>
@@ -134,7 +78,7 @@
         </section>
         <section id="search-bar">
             <div class="row">
-                <h3 class="six columns"><img src='img/search-icon-white.png'></img> Find and fix a translation</h3>
+                                <h3 class="six columns"><img src='img/search-icon-white.png'></img> Find and fix a translation</h3>
                 <div class="five columns">
                     <div class="search row collapse">
                         <div class="ten mobile-three columns">
@@ -143,35 +87,37 @@
                         <div class="two mobile-one columns">
                             <a class="button expand postfix">Find</a>
                         </div>
-                    </div>                    
-                 </div>
+                    </div>
                 </div>
+            </div>
             </div>
         </section>
         <section id="project-list">
             <div class="row">
                 <h3>Choose a project to translate</h3>
                 <div class="twelve columns">
-                    <div class="three row card">
-                        <img class="five columns" src='img/wikipedia-logo.svg'></img>
-                        <div class="seven columns">
+                    
+                    <div class="card">
+                        <img src='img/wikipedia-logo.svg'></img>
+                        <div>
                             <a>Wikipedia</a>
                             <p>
                             <b>87%</b><br />
                             <span>12,332 strings</span>
-                            <span class="progressbar"><span></span></span>
+                            <div class="progressbar"><div></div></div>
+                            q
                             </p>
                         </div>
                     </div>
                     
-                    <div class="three row card">
+                    <div class="card">
                         <img class="five columns" src='img/wikipedia-logo.svg'></img>
                         <div class="seven columns">
                             <a>Wikipedia</a>
                             <p>
                             <b>87%</b><br />
                             <span>12,332 strings</span>
-                            <span class="progressbar"><span></span></span>
+                            <div class="progressbar"><div></div></div>
                             </p>
                         </div>
                     </div>
@@ -182,14 +128,17 @@
         </section>
         
         
+        <!-- Internal script -->
+        <script></script>
         <!-- Included JS Files (Compressed) -->
         <script src="libs/foundation/javascripts/jquery.js"></script>
         <script src="libs/foundation/javascripts/foundation.min.js"></script>
         <script src="libs/foundation/javascripts/jquery.foundation.forms.js"></script>
         <!-- Initialize JS Plugins -->
         <script src="libs/foundation/javascripts/app.js"></script>
-        <!-- Internal script -->
-        <script>
+        <!-- Source Sans webfonts -->
+        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700" rel='stylesheet' type='text/css'>
+            
             
             </body>
-            </html>
+</html>
