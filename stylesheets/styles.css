@@ -14,14 +14,17 @@ header {
 	margin-right:10px;
 }
 #user-nav {
-	margin-top:20px;
+	margin-top:35px;
+    text-align:right;
 }
+#username{margin-right:5px;}
 #user-nav>*{float:right;}
 #login-btn {
 	float:right;
 	background-color:#005999;
 	margin-right:10px;
 }
+.proofread{margin-left:5px;}
 #dashboard {
 	background-image:url('../img/white_swan_dance_flickr.jpg');
 	/* by-nc-nd http://www.flickr.com/photos/eblingandreas/6759010433/sizes/l/in/photostream/*/
