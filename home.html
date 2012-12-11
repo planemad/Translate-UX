@@ -40,12 +40,12 @@
         <section id="dashboard">
             <div class="row">
                 <div class="seven columns">
-                    <div class="row tiles">
-                        <div style="width:25%;"><span>22</span><p>Open source projects<p></div>
-                        <div style="width:50%;"><span>5,664</span><p>Translators<p></div>
-                        <div style="width:50%;"><span>34,223</span><p>User interface strings to translate<p></div>
-                        <div style="width:25%;"><span>253</span><p>Languages<p></div>
-                    </div>
+                    <ul class="row tiles">
+                        <li class="four columns"><span><b>22</b></span><p>Open source projects<p></li>
+                        <li class="four columns"><span>5,664</span><p>Translators<p></li>
+                        <li class="four columns"><span>34,223</span><p>User interface strings to translate<p></li>
+                        <li class="four columns"><span>253</span><p>Languages<p></li>
+                    </ul>
                 </div>
                 <div class="five columns">
                     <div class="panel">
@@ -94,42 +94,75 @@
         </section>
         <section id="project-list">
             <div class="row">
-                <h3>Choose a project to translate</h3>
-                <div class="twelve columns">
+                <h3 class="twelve columns">Choose a project to translate</h3>
+                <ul class="twelve columns">
                     
-                    <div class="card">
+                    <li class="card">
+                        <img src='img/wikipedia-logo.svg'></img>
+                        <div>
+                            <h7>Wikipedia</h7>
+                            <b>87%</b>
+                            <span>12,332 strings</span>
+                            <div class="progressbar"><div></div></div>
+                        </div>
+                    </li>
+                    
+                    
+                    <li class="card">
                         <img src='img/wikipedia-logo.svg'></img>
                         <div>
                             <a>Wikipedia</a>
-                            <p>
-                            <b>87%</b><br />
+                            <b>87%</b><br/>
                             <span>12,332 strings</span>
                             <div class="progressbar"><div></div></div>
-                            q
-                            </p>
                         </div>
-                    </div>
+                    </li>
                     
-                    <div class="card">
-                        <img class="five columns" src='img/wikipedia-logo.svg'></img>
-                        <div class="seven columns">
+                    
+                    <li class="card">
+                        <img src='img/wikipedia-logo.svg'></img>
+                        <div>
                             <a>Wikipedia</a>
-                            <p>
-                            <b>87%</b><br />
+                            <b>87%</b><br/>
                             <span>12,332 strings</span>
                             <div class="progressbar"><div></div></div>
-                            </p>
                         </div>
-                    </div>
+                    </li>
                     
-                </div>
+                    
+                    <li class="card">
+                        <img src='img/wikipedia-logo.svg'></img>
+                        <div>
+                            <a>Wikipedia</a>
+                            <b>87%</b><br/>
+                            <span>12,332 strings</span>
+                            <div class="progressbar"><div></div></div>
+                        </div>
+                    </li>
+                    
+                    
+                    <li class="card">
+                        <img src='img/wikipedia-logo.svg'></img>
+                        <div>
+                            <a>Wikipedia</a>
+                            <b>87%</b><br/>
+                            <span>12,332 strings</span>
+                            <div class="progressbar"><div></div></div>
+                        </div>
+                    </li>
+                    
+                </ul>
                 
             </div>
         </section>
         
         
         <!-- Internal script -->
-        <script></script>
+        <script>
+            $(document).ready(function() {
+                              $(".tiles>div>*").toggle();
+                              });
+        </script>
         <!-- Included JS Files (Compressed) -->
         <script src="libs/foundation/javascripts/jquery.js"></script>
         <script src="libs/foundation/javascripts/foundation.min.js"></script>
