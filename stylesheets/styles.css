@@ -117,7 +117,7 @@ vertical-align:text-bottom;
 .card h6{margin:0;}
 .card h5{margin:0;}
 .card>*{display:inline-block;}
-
+.card>div>span{display:none;}
 .card a{color:#222;}
 .progressbar {
 background-color: lightgrey;

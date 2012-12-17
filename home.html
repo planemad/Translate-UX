@@ -81,7 +81,7 @@
         </section>
         <section id="search-bar">
             <div class="row">
-                                <h3 class="six columns"><img src='img/search-icon-white.png'></img> Find and fix a translation</h3>
+                <h3 class="six columns"><img src='img/search-icon-white.png'></img> Find and fix a translation</h3>
                 <div class="five columns">
                     <div class="search row collapse">
                         <div class="ten mobile-three columns">
@@ -106,6 +106,10 @@
                             <h6>Wikipedia</h6>
                             <h5 class="subheader">99%<small>Translated</small></h5>
                             <div class="progressbar"><div></div></div>
+                            <span>
+                                <h5 class="subheader">20%<small>Proofread</small></h5>
+                                <div class="progressbar"><div></div></div>
+                            </span>
                         </div>
                     </li>
                     
@@ -114,32 +118,32 @@
                         <div>
                             <h6>Wikipedia</h6>
                             <h5 class="subheader">99%<small>Translated</small></h5>
-                                <div class="progressbar"><div></div></div>
-                                </div>
+                            <div class="progressbar"><div></div></div>
+                        </div>
                     </li>
                     <li class="card">
                         <img src='img/wikipedia-logo.svg'></img>
                         <div>
                             <h6>Wikipedia</h6>
                             <h5 class="subheader">99%<small>Translated</small></h5>
-                                <div class="progressbar"><div></div></div>
-                                </div>
+                            <div class="progressbar"><div></div></div>
+                        </div>
                     </li>
                     <li class="card">
                         <img src='img/wikipedia-logo.svg'></img>
                         <div>
                             <h6>Wikipedia</h6>
                             <h5 class="subheader">99%<small>Translated</small></h5>
-                                <div class="progressbar"><div></div></div>
-                                </div>
+                            <div class="progressbar"><div></div></div>
+                        </div>
                     </li>
                     <li class="card">
                         <img src='img/wikipedia-logo.svg'></img>
                         <div>
                             <h6>Wikipedia</h6>
                             <h5 class="subheader">99%<small>Translated</small></h5>
-                                <div class="progressbar"><div></div></div>
-                                </div>
+                            <div class="progressbar"><div></div></div>
+                        </div>
                     </li>
                     <li class="card">
                         <img src='img/wikipedia-logo.svg'></img>
@@ -160,7 +164,7 @@
                     <li class="card reveal">
                         <div>
                             <h5 class="subheader">Show more projects <b>...</b></h5>
-                                </div>
+                        </div>
                     </li>
                 </ul>
                 
@@ -170,21 +174,24 @@
         <footer class="row">
             <p class="twelve columns">
             <a href="#">Privacy policy</a> . <a href="#">About translatewiki.net</a> . <a href="#">Disclaimers</a> . <a href="#">Skip to old homepage</a>
-                </p>
-            </footer>
+            </p>
+        </footer>
         
-        <!-- Internal script -->
-        <script>
-            $(document).ready(function() {
-                              $(".tiles>div>*").toggle();
-                              });
-        </script>
+        
         <!-- Included JS Files (Compressed) -->
         <script src="libs/foundation/javascripts/jquery.js"></script>
         <script src="libs/foundation/javascripts/foundation.min.js"></script>
         <script src="libs/foundation/javascripts/jquery.foundation.forms.js"></script>
         <!-- Initialize JS Plugins -->
         <script src="libs/foundation/javascripts/app.js"></script>
+        <!-- Internal script -->
+        <script>
+            $(document).ready(function() {
+                              $(".card").hover(function(){
+                                               $("div>span",this).slideToggle();
+                                                 });
+                              });
+            </script>
         <!-- Source Sans webfonts -->
         <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700" rel='stylesheet' type='text/css'>
             
