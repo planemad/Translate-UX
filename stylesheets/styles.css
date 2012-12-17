@@ -1,112 +1,132 @@
+
 body {
-	font-family:'Source Sans Pro';
+font-family:'Source Sans Pro';
 }
 header h2 {
-	font-size:22px;
-	margin:20px 0 10px;
+font-size:22px;
+margin:20px 0 10px;
 }
+fieldset{border:none}
+fieldset legend{background-color:transparent;}
 header {
-	border-bottom:4px solid #005999;
+border-bottom:4px solid #005999;
 }
 #logo {
-	height:50px;
-	float:left;
-	margin-right:10px;
+height:50px;
+float:left;
+margin-right:10px;
 }
 #user-nav {
-	margin-top:35px;
-    text-align:right;
+margin-top:35px;
+text-align:right;
 }
 #username{margin-right:5px;}
 #user-nav>*{float:right;}
 #login-btn {
-	float:right;
-	background-color:#005999;
-	margin-right:10px;
+float:right;
+background-color:#005999;
+margin-right:10px;
 }
 .proofread{margin-left:5px;}
+
+
 #dashboard {
-	background-image:url('../img/white_swan_dance_flickr.jpg');
-	/* by-nc-nd http://www.flickr.com/photos/eblingandreas/6759010433/sizes/l/in/photostream/*/
-    -webkit-box-shadow:  2px 2px 2px 2px rgba(0, 0, 0, 0.4);
-        
-        box-shadow:  2px 2px 2px 2px rgba(0, 0, 0, 0.4);
-        z-index:100;
+background-image:url('../img/white_swan_dance_flickr.jpg');
+/* by-nc-nd http://www.flickr.com/photos/eblingandreas/6759010433/sizes/l/in/photostream/*/
+-webkit-box-shadow:  2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+
+box-shadow:  2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+z-index:100;
 }
 #dashboard .seven.columns{padding-right:0;}
 .panel {
-	margin:0;
-    min-height:340px;
+margin:0;
+min-height:340px;
 }
 .tiles>li.four.columns {
-	background-color:#005999;
+background-color:#005999;
 //	background-color:rgba(0,89,153,0.8);
-	height:160px;
-	margin:5px 5px 0 0;
-	color:white;
-	padding:10px;
-    display:inline-block;
-    width:32%
+height:160px;
+margin:5px 5px 0 0;
+color:white;
+padding:10px;
+display:inline-block;
+width:32%
 }
 .tiles .empty{opacity:0.2;}
 .tiles>li>*{opacity:0.5;}
 .tiles>li:hover>*{opacity:1;}
 .tiles>li>span {
-	font-size:400%;
+font-size:400%;
 }
 .tiles>li>p,ul {
-	line-height:1;
+line-height:1;
 }
 a#uls-trigger{margin:10px;
 display:block;}
+
+
 #search-bar {
-	background-color:#6B7177;
-	padding:10px;
-    -webkit-box-shadow:  2px 2px 5px 2px rgba(0, 0, 0, 0.2);
-        
-        box-shadow:  2px 2px 5px 2px rgba(0, 0, 0, 0.2);
-        z-index:100;
+background-color:#222;
+padding:10px;
+-webkit-box-shadow:  2px 2px 5px 2px rgba(0, 0, 0, 0.2);
+
+box-shadow:  2px 2px 5px 2px rgba(0, 0, 0, 0.2);
+z-index:100;
+margin-bottom:10px;
+
 }
 #search-bar h3 {
-	color:white;
+color:white;
 }
+#search-bar input[type="text"]{
+background-color:transparent;
+color:white;
+font-size:27px;
+font-family:"Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+height:42px;
+border:none;
+}
+#search-bar span{border-bottom:1px solid #CCC;}
 .search.row {
-	padding-top:14px;
+padding-top:14px;
 }
 .search .button{background-color:#005999;}
+
+
 #project-list h3{margin-bottom:20px;}
 .card {
-	width:24%;
-	border:1px solid #B7BABC;
-	padding:10px;
-	margin-bottom:5px;
-	margin-left:5px;
-    display:inline-block;
-    min-height:118px;
-    vertical-align:top;
+width:24%;
+border:1px solid #B7BABC;
+padding:10px;
+margin-bottom:5px;
+margin-left:5px;
+display:inline-block;
+min-height:118px;
+vertical-align:top;
 }
 .card img {
-	margin-right:5px;
-    width:40%;
-    background-color:#fafafa;
+margin-right:5px;
+width:40%;
+background-color:#fafafa;
 }
 .card>div{
-    width:50%;
-    vertical-align:text-bottom;
-    }
+width:50%;
+vertical-align:text-bottom;
+}
 .card h6{margin:0;}
 .card h5{margin:0;}
 .card>*{display:inline-block;}
 
 .card a{color:#222;}
 .progressbar {
-	background-color: lightgrey;
+background-color: lightgrey;
 }
 .progressbar div {
-	background-color:#95E842;
-	width:40%;
-	/* Adjust with JavaScript */
-	height:2px;
+background-color:#95E842;
+width:40%;
+/* Adjust with JavaScript */
+height:2px;
 }
 //.learn{background-color:#f9f9f9;}
 footer p{text-align:center;margin-top:20px;}
