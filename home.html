@@ -55,7 +55,7 @@
                         <form>
                             <fieldset>
                                 
-                                <legend>Choose languages that you know?</legend>
+                                <legend>1.Choose languages that you know:</legend>
                                 
                                 <!--label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> Label for Checkbox</label>
                                  <label for="checkbox2"><input type="checkbox" id="checkbox2" ><span class="custom checkbox checked"></span> Label for Checkbox</label-->
@@ -65,7 +65,7 @@
                             </fieldset>
                             <fieldset>
                                 
-                                <legend>Fill in your account details</legend>
+                                <legend>2.Fill in your account details:</legend>
                                 
                                 
                                 <input type="text" placeholder="Username" />
@@ -97,7 +97,7 @@
                     <li class="card">
                         <img src='img/wikipedia-logo.svg'></img>
                         <div>
-                            <h6><a href="#">Wikipedia <img class="right-caret" src='img/right-caret.svg'></img></a></h6>
+                            <h6><a href="#">Wikipedia</a></h6>
                             
                             <h5 class="subheader"><span>99%<small>Translated</small></span><a href="#">Translate »</a></h5>
                             <div class="progressbar"><div style="width:99%"></div></div>
@@ -204,6 +204,9 @@
                                                  });
                               $(".card h5").hover(function(){
                                                   $(this).children().toggle();
+                                                  });
+                              $(".card>img").hover(function(){
+                                                  $("this").children().toggle();
                                                   });
                               
                               });

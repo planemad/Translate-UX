@@ -124,7 +124,10 @@ min-height:90px;
 width:50%;
 vertical-align:text-bottom;
 }
-.card h6{margin:0;}
+.card h6{margin:0;
+background:url("../img/right-caret.svg") no-repeat center -50px;
+}
+.card h6:hover{background-position:center right}
 .card h5{margin:0;}
 .card>*{display:inline-block;}
 .toggle{display:none;}
