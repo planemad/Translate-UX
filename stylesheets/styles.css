@@ -117,8 +117,8 @@ vertical-align:text-bottom;
 .card h6{margin:0;}
 .card h5{margin:0;}
 .card>*{display:inline-block;}
-.card>div>span{display:none;}
-.card a{color:#222;}
+.toggle{display:none;}
+.card h5 a{color:#222;display:none;}
 .progressbar {
 background-color: lightgrey;
 }
@@ -126,8 +126,10 @@ background-color: lightgrey;
 background-color:#95E842;
 width:40%;
 /* Adjust with JavaScript */
-height:2px;
+height:1px;
 }
 //.learn{background-color:#f9f9f9;}
 footer p{text-align:center;margin-top:20px;}
 footer a{color:gray;}
+
+//Generic styles
