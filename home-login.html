@@ -32,13 +32,26 @@
                     <h2><img id="logo" src='img/translatewikinet-logo.svg'></img>translatewiki.net<br/>
                         <small><strong>Open source</strong> translation platform of the internet</small></h2>
                 </div>
-                <div id="user-nav" class="four columns">
+                <!--div id="user-nav" class="four columns">
                     <img src='img/user-default-avatar.png'></img>
                     <div>
                         <span id="username">rabbit</span><br/>
-                    <a href="#">suomi <img src='img/dropdown.png'></img><a>
+                    <a href="#">suomi <img src='img/dropdown.png'></img></a>
                     </div>
-                </div>
+                </div-->
+                <div id="user-nav" class="four columns">
+                    <div href="#" class="button dropdown">
+                        <span id="username">drfreire</span>
+                        <span id="language">Afrikaans</span>
+                        <ul>
+                            <li><a href="#">Talk Page</a></li>
+                            <li><a href="#">Preferences</a></li>
+                            <li><a href="#">Watchlist</a></li>
+                            <li class="divider"></li>
+                            <li><a href="home.html">Logout</a></li>
+                        </ul>
+                    </div>
+                    </div>
             </div>
         </header>
         <section id="dashboard">
@@ -55,13 +68,26 @@
                 </div>
                 <div class="five columns">
                     <div class="panel">
-                        <h5>Translation progress for <u>suomi</u></h5>
-                        <h4>22 <small>Untranslated message groups</small></h6>
-                        <h4>1,223 <small>Untranslated strings</small></h6>
-                            <h4>221 <small>Outdated strings</small></h6>
-                                 <h4>2,981 <small>Unreviewed strings</small></h6>
-                                                    <a class="success button" href="#">Start Translating »</a>
-                        <a  class="proofread" href="#">Proofread translations »</a>
+                        <h5>Your translation statistics for <u>Afrikaans</u></h5>
+                        <ul class="glass-group">
+                            <li class="user-stats glass active">
+                                <h5><small>Your translation speed</small></h5>
+                                <p><span><b>663</b></span> strings/week
+                                <small><span>Ranked 4</span> of 87 Afrikaans translators</small>
+                                </p>
+                                <div class="progressbar"><div style="width:99%"></div></div>
+                                <a class="glass-button" href="#">Start Translating »</a>
+                            </li>
+                            <li class="user-stats glass">
+                                <h5><small>Number of translations reviewed</small></h5>
+                                <p><span>45%</span> of contributions
+                                <small><span>Ranked 93</span> of 1,992 active translators</small>
+                                </p>
+                                <div class="progressbar"><div style="width:99%"></div></div>
+                                <a class="glass-button" href="#">Review Translations »</a>
+                            </li>
+                            </ul>
+                        
                         </form>
                     </div>
                 </div>
@@ -195,6 +221,9 @@
                               $(".card>img").hover(function(){
                                                    $("this").children().toggle();
                                                    });
+                              $(".glass-group .glass:not(:first)").hover(function(){
+                                                                         $(".glass-group .glass:first").toggleClass("active");
+                                                                         });
                               
                               });
             </script>
