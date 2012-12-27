@@ -11,6 +11,7 @@ fieldset legend{background-color:transparent;}
 header {
 border-bottom:4px solid #005999;
 }
+a{color:#005999;}
 
 #logo {
 height:50px;
@@ -22,15 +23,13 @@ margin-top:25px;
 text-align:right;
 }
 #username,#language{display:block;}
+#username{
+font-weight:normal;}
 
 #user-nav>*{float:right;}
-#login-btn {
-float:right;
-background-color:#005999;
-margin-right:10px;
-}
 .proofread{margin-left:5px;}
-
+#login-btn{margin-top:15px;
+text-align:right;}
 
 #dashboard {
 background-image:url('../img/white_swan_dance_flickr.jpg');
@@ -204,12 +203,27 @@ background-color:#005999;
 color:white;
 }
 .button.dropdown{
-background-color:transparent;
-border:none;
-color:#005999;
 text-align:right;
-font-weight:normal;
 }
 .button.dropdown:after{
 border-top-color:#005999;
 }
+.button:hover.dropdown::after{
+border-top-color:white;
+}
+.negative.button{
+background-color:transparent;
+border-color:transparent;
+color:#005999;
+}
+.negative.button:hover{
+background-color:#005999;
+color:white;
+border-color:white;
+}
+.button{background-color:#005999;}
+.button:hover{
+background-color:#7297D7;
+}
+.success.button{
+background-color:#008740;}
