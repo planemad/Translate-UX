@@ -131,7 +131,7 @@ background:url("../img/right-caret.svg") no-repeat center -50px;
 .card h6 a{color:#222;}
 .card h5 a{color:#222;display:none;}
 .progressbar {
-background-color: lightgrey;
+background-color: #999;
 }
 .progressbar div {
 background-color:#95E842;
