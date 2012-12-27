@@ -177,6 +177,7 @@ border:1px solid #dadada;
 .user-stats{
 background:rgba(255, 255, 255, 0.2) url("../img/change-icon-positive.svg") no-repeat 20px 30px;
 padding-left:60px;}
+
 .button{
 width:auto;background:#005999;border:1px solid #1e728c;-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.5) inset;-moz-box-shadow:0 1px 0 rgba(255,255,255,0.5) inset;box-shadow:0 1px 0 rgba(255,255,255,0.5) inset;color:#fff;cursor:pointer;display:inline-block;font-family:"Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;font-size:14px;font-weight:bold;line-height:1;margin:0;outline:none;padding:10px 20px 11px;position:relative;text-align:center;text-decoration:none;-webkit-transition:background-color 0.15s ease-in-out;-moz-transition:background-color 0.15s ease-in-out;-o-transition:background-color 0.15s ease-in-out;transition:background-color 0.15s ease-in-out}
 
@@ -185,7 +186,7 @@ width:auto;background:#005999;border:1px solid #1e728c;-webkit-box-shadow:0 1px 
 color:#222;
 margin:1px;
 border:1px solid transparent;
-width:auto;background:transparent;color:#222;cursor:pointer;display:inline-block;font-family:"Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;font-size:14px;font-weight:bold;line-height:1;margin:0;outline:none;padding:10px 20px 11px;position:relative;text-align:center;text-decoration:none;-webkit-transition:background-color 0.15s ease-in-out;-moz-transition:background-color 0.15s ease-in-out;-o-transition:background-color 0.15s ease-in-out;transition:background-color 0.15s ease-in-out;
+width:auto;background:transparent;color:#222;cursor:pointer;display:inline-block;font-family:"Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;line-height:1;margin:0;outline:none;position:relative;text-align:center;text-decoration:none;-webkit-transition:background-color 0.15s ease-in-out;-moz-transition:background-color 0.15s ease-in-out;-o-transition:background-color 0.15s ease-in-out;transition:background-color 0.15s ease-in-out;
 }
 
 
@@ -203,7 +204,8 @@ background:#005999;
 color:white;
 
 }
-
+.more{display:none;
+transition:all 0.15s ease-in-out;}
 .glass:hover .glass.button:hover,.glass.active .glass.button:hover{
 background-color:#004272;
 
