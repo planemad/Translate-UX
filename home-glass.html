@@ -102,76 +102,29 @@
         <section id="project-list">
             <div class="row">
                 <h3 class="twelve columns">Choose a project to translate</h3>
+                <ul class="glass-group">
+                    <li class="user-stats glass active">
+                        <h5>Wikipedia <small>The free encyclopedia!</small></h5>
+                        <p><span><b>92#</b></span> Translated
+                        <small><span>Ranked 4</span> of 87 Afrikaans translators</small>
+                        </p>
+                        <div class="progressbar"><div style="width:99%"></div></div>
+                        <a class="small glass button" href="#">Start Translating »</a>
+                    </li>
+                    <li class="user-stats glass">
+                        <h5><small>Number of translations reviewed</small></h5>
+                        <p><span>45%</span> of contributions
+                        <small><span>Ranked 93</span> of 1,992 active translators</small>
+                        </p>
+                        <div class="progressbar"><div style="width:68%"></div></div>
+                        <a class="glass-button" href="#">Review Translations »</a>
+                    </li>
+                </ul>
+
                 <ul class="twelve columns">
                     
-                    <li class="card">
-                        <img src='img/wikipedia-logo.svg'></img>
-                        <div>
-                            <h6><a href="#">Wikipedia</a></h6>
-                            
-                            <h5 class="subheader"><span>99%<small>Translated</small></span><a href="#">Translate »</a></h5>
-                            <div class="progressbar"><div style="width:99%"></div></div>
-                            <h5 class="subheader toggle"><span>22%<small>Proofread</small></span><a href="#">Proofread »</a></h5>
-                            <div class="progressbar"><div style="width:22%"></div></div>
-                        </div>
-                    </li>
                     
-                    <li class="card">
-                        <img src='img/mediawiki-logo.svg'></img>
-                        <div>
-                            <h6><a href="#">Mediawiki </a></h6>
-                            
-                            <h5 class="subheader"><span>99%<small>Translated</small></span><a href="#">Translate »</a></h5>
-                            <div class="progressbar"><div style="width:99%"></div></div>
-                            <h5 class="subheader toggle"><span>22%<small>Proofread</small></span><a href="#">Proofread »</a></h5>
-                            <div class="progressbar"><div style="width:22%"></div></div>
-                        </div>
-                    </li>
-                    <li class="card">
-                        <img src='img/wikipedia-logo.svg'></img>
-                        <div>
-                            <h6><a href="#">Wikipedia </a></h6>
-                            
-                            <h5 class="subheader"><span>99%<small>Translated</small></span><a href="#">Translate »</a></h5>
-                            <div class="progressbar"><div style="width:99%"></div></div>
-                            <h5 class="subheader toggle"><span>22%<small>Proofread</small></span><a href="#">Proofread »</a></h5>
-                            <div class="progressbar"><div style="width:22%"></div></div>
-                        </div>
-                    </li>
-                    <li class="card">
-                        <img src='img/wikipedia-logo.svg'></img>
-                        <div>
-                            <h6><a href="#">Wikipedia </a></h6>
-                            
-                            <h5 class="subheader"><span>99%<small>Translated</small></span><a href="#">Translate »</a></h5>
-                            <div class="progressbar"><div style="width:99%"></div></div>
-                            <h5 class="subheader toggle"><span>22%<small>Proofread</small></span><a href="#">Proofread »</a></h5>
-                            <div class="progressbar"><div style="width:22%"></div></div>
-                        </div>
-                    </li>
-                    <li class="card">
-                        <img src='img/wikipedia-logo.svg'></img>
-                        <div>
-                            <h6><a href="#">Wikipedia </a></h6>
-                            
-                            <h5 class="subheader"><span>99%<small>Translated</small></span><a href="#">Translate »</a></h5>
-                            <div class="progressbar"><div style="width:99%"></div></div>
-                            <h5 class="subheader toggle"><span>22%<small>Proofread</small></span><a href="#">Proofread »</a></h5>
-                            <div class="progressbar"><div style="width:22%"></div></div>
-                        </div>
-                    </li>
-                    <li class="card">
-                        <img src='img/wikipedia-logo.svg'></img>
-                        <div>
-                            <h6><a href="#">Wikipedia </a></h6>
-                            
-                            <h5 class="subheader"><span>99%<small>Translated</small></span><a href="#">Translate »</a></h5>
-                            <div class="progressbar"><div style="width:99%"></div></div>
-                            <h5 class="subheader toggle"><span>22%<small>Proofread</small></span><a href="#">Proofread »</a></h5>
-                            <div class="progressbar"><div style="width:22%"></div></div>
-                        </div>
-                    </li>
-                    <li class="card">
+                    <li class="card glass">
                         <img src='img/wikipedia-logo.svg'></img>
                         <div>
                             <h6><a href="#">Wikipedia </a></h6>
@@ -211,13 +164,19 @@
                                                $(".toggle",this).slideToggle();
                                                
                                                });
-                            
+                              $(".card h5").hover(function(){
+                                                  $(this).children().toggle();
+                                                  });
                               $(".card>img").hover(function(){
                                                    $("this").children().toggle();
                                                    });
-                              $(".glass-group .glass:not(:first)").hover(function(){
-                                                                         $(".glass-group .glass:first").toggleClass("active");
-                                                                         });
+                              $(".glass-group .glass").hover(function(){
+                                                             $(".glass-group .glass:first").removeClass("active");
+                                                             },
+                                                             function(){
+                                                             $(".glass-group .glass:first").addClass("active");
+                                                             }
+                                                             );
                               
                               });
             </script>

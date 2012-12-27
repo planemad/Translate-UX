@@ -72,7 +72,7 @@
                                 <small><span>Ranked 4</span> of 87 Afrikaans translators</small>
                                 </p>
                                 <div class="progressbar"><div style="width:99%"></div></div>
-                                <a class="glass-button" href="#">Start Translating »</a>
+                                <a class="glass button" href="#">Start Translating »</a>
                             </li>
                             <li class="user-stats glass">
                                 <h5><small>Number of translations reviewed</small></h5>
@@ -80,7 +80,7 @@
                                 <small><span>Ranked 93</span> of 1,992 active translators</small>
                                 </p>
                                 <div class="progressbar"><div style="width:68%"></div></div>
-                                <a class="glass-button" href="#">Review Translations »</a>
+                                <a class="glass button" href="#">Review Translations »</a>
                             </li>
                             </ul>
                         
@@ -104,7 +104,7 @@
                 <h3 class="twelve columns">Choose a project to translate</h3>
                 <ul class="twelve columns">
                     
-                    <li class="card">
+                    <li class="card glass">
                         <img src='img/wikipedia-logo.svg'></img>
                         <div>
                             <h6><a href="#">Wikipedia</a></h6>
@@ -116,7 +116,7 @@
                         </div>
                     </li>
                     
-                    <li class="card">
+                    <li class="card glass">
                         <img src='img/mediawiki-logo.svg'></img>
                         <div>
                             <h6><a href="#">Mediawiki </a></h6>
@@ -127,7 +127,7 @@
                             <div class="progressbar"><div style="width:22%"></div></div>
                         </div>
                     </li>
-                    <li class="card">
+                    <li class="card glass">
                         <img src='img/wikipedia-logo.svg'></img>
                         <div>
                             <h6><a href="#">Wikipedia </a></h6>
@@ -138,7 +138,7 @@
                             <div class="progressbar"><div style="width:22%"></div></div>
                         </div>
                     </li>
-                    <li class="card">
+                    <li class="card glass">
                         <img src='img/wikipedia-logo.svg'></img>
                         <div>
                             <h6><a href="#">Wikipedia </a></h6>
@@ -149,7 +149,7 @@
                             <div class="progressbar"><div style="width:22%"></div></div>
                         </div>
                     </li>
-                    <li class="card">
+                    <li class="card glass">
                         <img src='img/wikipedia-logo.svg'></img>
                         <div>
                             <h6><a href="#">Wikipedia </a></h6>
@@ -160,7 +160,7 @@
                             <div class="progressbar"><div style="width:22%"></div></div>
                         </div>
                     </li>
-                    <li class="card">
+                    <li class="card glass">
                         <img src='img/wikipedia-logo.svg'></img>
                         <div>
                             <h6><a href="#">Wikipedia </a></h6>
@@ -171,7 +171,7 @@
                             <div class="progressbar"><div style="width:22%"></div></div>
                         </div>
                     </li>
-                    <li class="card">
+                    <li class="card glass">
                         <img src='img/wikipedia-logo.svg'></img>
                         <div>
                             <h6><a href="#">Wikipedia </a></h6>
@@ -206,20 +206,28 @@
         <script src="libs/foundation/javascripts/app.js"></script>
         <!-- Internal script -->
         <script>
+            
             $(document).ready(function() {
                               $(".card").hover(function(){
                                                $(".toggle",this).slideToggle();
                                                
                                                });
-                            
+                              $(".card h5").hover(function(){
+                                                  $(this).children().toggle();
+                                                  });
                               $(".card>img").hover(function(){
                                                    $("this").children().toggle();
                                                    });
-                              $(".glass-group .glass:not(:first)").hover(function(){
-                                                                         $(".glass-group .glass:first").toggleClass("active");
-                                                                         });
+                              $(".glass-group .glass").hover(function(){
+                                                                         $(".glass-group .glass:first").removeClass("active");
+                                                                         },
+                                                             function(){
+                                                             $(".glass-group .glass:first").addClass("active");
+                                                             }
+                                                             );
                               
                               });
+            
             </script>
         <!-- Source Sans webfonts -->
         <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700" rel='stylesheet' type='text/css'>
