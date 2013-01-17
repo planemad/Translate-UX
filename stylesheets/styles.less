@@ -1,59 +1,49 @@
 @import "reset.less";
 header {
     border-bottom: 4px solid #005999;
-    h2 {
-    font-size: 22px;
-    line-height: 1;
+ h2 {
+ font-size: 22px;
+ line-height: 1;
 }
 }
-
-
 #logo {
-    height: 50px;
+	height: 50px;
 	float: left;
 	margin-right: 10px;
 }
-
 #user-nav {
 	margin-top: 25px;
 	text-align: right;
-    &>*{
-    float: right;
+ &>* {
+ float: right;
 }
 }
-
-#username,#language {
+#username, #language {
 	display: block;
 }
-
 #username {
 	font-weight: normal;
 }
-
 .proofread {
 	margin-left: 5px;
 }
-
 #login-btn {
 	margin-top: 10px;
 	text-align: right;
 }
-
 #dashboard {
 	background-image: url('../img/white_swan_dance_flickr.jpg');
 	/* by-nc-nd http://www.flickr.com/photos/eblingandreas/6759010433/sizes/l/in/photostream/*/
 	-webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
 	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
 	z-index: 100;
-    .seven.columns {
-    padding-right: 0;
+ .seven.columns {
+ padding-right: 0;
 }
 }
-
-
 .tiles>li.four.columns {
-    background-color: #005999; //
-	background-color: rgba(0, 89, 153, 0.8);
+	background-color: #005999;
+//  background-color: rgba(0, 89, 153, 0.8);
 	height: 160px;
 	margin: 5px 5px 0 0;
 	color: white;
@@ -61,27 +51,21 @@ header {
 	display: inline-block;
 	width: 32%
 }
-
 .tiles .empty {
 	opacity: 0.2;
 }
-
 .tiles>li>* {
 	opacity: 0.5;
 }
-
 .tiles>li:hover>* {
 	opacity: 1;
 }
-
 .tiles>li>span {
 	font-size: 400%;
 }
-
-.tiles>li>p,ul {
+.tiles>li>p, ul {
 	line-height: 1;
 }
-
 a#uls-trigger {
 	margin-top: 10px;
 	display: block;
@@ -89,11 +73,9 @@ a#uls-trigger {
 	padding: 7px;
 	color: #222
 }
-
 a#uls-trigger:hover {
 	background-color: darkgray;
 }
-
 #search-bar {
 	background-color: #222;
 	padding: 10px;
@@ -101,12 +83,12 @@ a#uls-trigger:hover {
 	box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
 	z-index: 100;
 	margin-bottom: 10px;
-    img {
-    float: left;
-	padding: 10px 20px 0 0;
+ img {
+ float: left;
+ padding: 10px 20px 0 0;
 }
 input[type="text"] {
-    background-color: white;
+	background-color: white;
 	font-size: 27px;
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	height: 42px;
@@ -116,19 +98,16 @@ input[type="text"] {
 	display: inline-block;
 }
 span {
-    border-bottom: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
 }
 .button {
-    vertical-align: text-top;
+	vertical-align: text-top;
 }
 }
-
-
 #project-list h3 {
 	margin-bottom: 20px;
 }
-
-.card,.more-card {
+.card, .more-card {
 	width: 23.5%;
 	border: 1px solid #B7BABC;
 	padding: 10px;
@@ -138,66 +117,58 @@ span {
 	min-height: 118px;
 	vertical-align: top;
 	background-color: #fafafa;
-    &>img {
-    margin-right: 5px;
-	width: 40%;
-	min-height: 90px;
+ &>img {
+ margin-right: 5px;
+ width: 40%;
+ min-height: 90px;
 }
 &>div {
-    width: 50%;
-	vertical-align: text-bottom;
+ width: 50%;
+ vertical-align: text-bottom;
 }
 h6 {
-    margin: 0;
+	margin: 0;
 	background: url("../img/right-caret.svg") no-repeat center -50px;
-    a {
-    color: #222;
+ a {
+ color: #222;
 }
-    &:hover {
-    background-position: center right
+ &:hover {
+ background-position: center right
 }
 }
 h5 {
-    margin: 0;
-    a {
-    color: #222;
-	display: none;
+	margin: 0;
+ a {
+ color: #222;
+ display: none;
 }
 }
 &>* {
-    display: inline-block;
+ display: inline-block;
 }
 }
-
 .toggle {
 	display: none;
 }
-
-
 .progressbar {
 	background-color: #999;
-    div {
-    background-color: #95E842;
-	width: 40%;
+ div {
+ background-color: #95E842;
+ width: 40%;
 	/* Adjust with JavaScript */
 	height: 1px;
 }
 }
-
 .user-stats .progressbar div {
 	height: 3px;
 	margin-bottom: 10px;
 }
-
 .more-card {
 	border: none;
 }
-
-
 .card h6:hover img {
-    display: inline;
+	display: inline;
 }
-
 .glass {
 	-webkit-box-shadow: 0px 0px 4px 2px rgba(22, 22, 22, 0);
 	box-shadow: 0px 0px 4px 2px rgba(22, 22, 22, 0);
@@ -209,55 +180,43 @@ h5 {
 	margin: 4px;
 	border: 1px solid #dadada;
 }
-
-.glass:hover,.glass.active {
+.glass:hover, .glass.active {
 	-webkit-box-shadow: 0px 0px 4px 2px rgba(22, 22, 22, 0.1);
 	box-shadow: 0px 0px 4px 2px rgba(22, 22, 22, 0.1);
 	-webkit-border-radius: 2px;
 	background-color: rgba(255, 255, 255, 0.6);
 }
-
 .glass h5 {
 	margin: 0;
 }
-
-.glass p,.glass p>span {
+.glass p, .glass p>span {
 	font-size: 150%;
 	line-height: 1.1;
 	margin-bottom: 5px;
 }
-
 .glass p small {
 	display: block;
 	color: #999;
 }
-
 .glass p span {
 	color: #222;
 }
-
 .user-stats {
-	background: rgba(255, 255, 255, 0.2)
-		url("../img/change-icon-positive.svg") no-repeat 20px 30px;
+	background: rgba(255, 255, 255, 0.2)  url("../img/change-icon-positive.svg") no-repeat 20px 30px;
 	padding-left: 60px;
 }
-.project{
-    width:23.5%;
+.project {
+	width:23.5%;
 }
-
-.glass:hover .glass.button,.glass.active .glass.button {
-    background: #005999;
+.glass:hover .glass.button, .glass.active .glass.button {
+	background: #005999;
 	color: white;
 }
-
 .more {
 	display: none;
 	transition: all 0.15s ease-in-out;
 }
-
-.glass:hover .glass.button:hover,.glass.active .glass.button:hover {
+.glass:hover .glass.button:hover, .glass.active .glass.button:hover {
 	background-color: #004272;
 	color: white;
 }
-
-
