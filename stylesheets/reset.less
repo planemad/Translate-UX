@@ -1,3 +1,8 @@
+/*Agora Colors*/
+@agora-blue:#005999;
+@agora-green:#008740;
+
+/*Foundation CSS resets*/
 body {
     font-family: 'Source Sans Pro';
 }
@@ -10,12 +15,10 @@ fieldset legend {
 	background-color: transparent;
 }
 
-header {
-	border-bottom: 4px solid #005999;
-}
+
 
 a {
-	color: #005999;
+	color: @agora-blue;
 }
 
 .panel {
@@ -40,7 +43,7 @@ img.right-caret {
 
 .button {
 	width: auto;
-	background: #005999;
+	background: @agora-blue;
 	border: 1px solid #1e728c;
 	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
@@ -113,7 +116,7 @@ border:1px solid #C3C3C3;
 }
 
 .button.dropdown:after {
-	border-top-color: #005999;
+	border-top-color: @agora-blue;
 }
 
 .button:hover.dropdown::after {
@@ -123,17 +126,17 @@ border:1px solid #C3C3C3;
 .negative.button {
 	background-color: transparent;
 	border-color: transparent;
-	color: #005999;
+	color: @agora-blue;
 }
 
 .negative.button:hover {
-	background-color: #005999;
+	background-color: @agora-blue;
 	color: white;
 	border-color: white;
 }
 
 .button {
-	background-color: #005999;
+	background-color: @agora-blue;
 }
 
 .button:hover {
@@ -141,5 +144,5 @@ border:1px solid #C3C3C3;
 }
 
 .success.button {
-	background-color: #008740;
+	background-color: @agora-green;
 }
